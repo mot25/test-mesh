@@ -1,0 +1,35 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "baseUrl": ".",
+    "typeRoots": ["types", "node_modules/@types"],
+    "paths": {
+      "*": ["src/*"],
+      "@assets/*": ["@/src/assets/*"],
+      "@hooks/*": ["@/src/hooks/*"],
+      "@components/*": ["@/src/components/*"],
+      "@containers/*": ["@/src/containers/*"],
+      "@screens/*": ["@/src/screens/*"],
+      "@stacks/*": ["@/src/stacks/*"],
+      "@shared/*": ["@/src/shared/*"],
+      "@Store/*": ["@/src/Store/*"],
+      "@api/*": ["@/src/api/*"]
+    }
+  },
+  "exclude": [
+    "ios",
+    "android",
+    "node_modules",
+    "jest.config.js",
+    "babel.config.js",
+    "metro.config.js"
+  ],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/types/**/*.d.ts"
+  ]
+}
